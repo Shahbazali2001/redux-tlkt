@@ -31,4 +31,3 @@ const pizzaSlice = createSlice(
 console.log(pizzaSlice); // By default createSlice returns an object with two properties reducer and actions
 module.exports = pizzaSlice.reducer; // export the reducer  (default export), simply reducer is a function that is used to update the state
 module.exports.pizzaActions = pizzaSlice.actions; // export the actions (named export), simply pizzActions is an object that contains the action creators
-
