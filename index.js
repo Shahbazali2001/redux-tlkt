@@ -9,7 +9,8 @@ const unsubscribe = store.subscribe(() => {
 
 store.dispatch(pizzaActions.pizza_order(15));
 unsubscribe();
-// dispatch is a function that takes in an action as an argument
+console.log("First State: " ,store.getState());
+// store.dispatch is a function that takes in an action as an argument
 // action is an object that contains the type and payload properties
 // type is the name of the action
 // payload is the data that is passed to the action
